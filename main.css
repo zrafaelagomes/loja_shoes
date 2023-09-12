@@ -17,8 +17,7 @@ body {
 
 section .container-flex img {
     max-width: 200px;
-    margin-right: 15px;
-    
+    margin-right: 15px;    
 }
 
 p {
@@ -98,6 +97,13 @@ nav li a {
     display: flex;
 }
 
+.produto {
+
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;    
+}
+
 #sobre-a-loja img {
     max-width: 400px;
     margin-right: 24px;
@@ -127,4 +133,59 @@ button {
     font-style: italic;
     cursor: pointer;
     border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+        display: block;
+        font-size: 1em;
+    }
+
+    section .container-flex img {
+        max-width: 150px;
+        margin-right: 15px;    
+    }
+
+    .container-flex {
+        display: flex;
+    }
+
+    .produto {    
+        text-align: center;
+        padding: 1em;    
+    }
+
+    .btn-interest {
+        align-items: stretch;
+    }
+    
+    #sobre-a-loja img {
+        display: block;
+        max-width: 240px;
+        margin-right: 24px;
+    }
+    
+    section {
+        padding: 12px 0;
+        align-items: stretch;
+    }
+
+}
+    
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .produto {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
 }
